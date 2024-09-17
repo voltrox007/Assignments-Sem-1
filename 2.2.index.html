@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="2.2.style.css" />
+  <style>
+    body {
+      background-color: rgb(114, 203, 94);
+    }
+
+    h1 {
+      color: rgb(31, 97, 5);
+      text-align: center;
+    }
+
+    form {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Application Form</h1>
+  <hr size="5" width="300px" color="blue" />
+  <br /><br />
+  <form>
+    <label for="name">First Name: &nbsp;</label>
+    <input type="text" placeholder="'name'" name="name" id="name" /><br /><br />
+
+    <label for="name">Last Name: &nbsp;</label>
+    <input type="text" name="lname" id="lname" /><br /><br />
+
+    <label for="password">Password: &nbsp; &nbsp;</label>
+    <input type="password" name="password" id="password" /><br /><br />
+
+    <label for="comment">Comments: &nbsp; &nbsp;</label>
+    <textarea id="comment" name="comment"></textarea>
+
+    <br /><br />
+    <label for="language">Language:</label>
+    <input type="checkbox" id="hindi" name="language" value="hindi" checked />
+    <label for="hindi"> Hindi</label>
+    <input type="checkbox" id="english" name="language" value="english" />
+    <label for="english"> English</label>
+    <input type="checkbox" id="punjabi" name="language" value="punjabi" />
+    <label for="punjabi"> Punjabi</label><br />
+    <br /><br />
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" checked />
+    <label for="male"> Male</label>
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female"> Female</label><br />
+    <br /><br />
+    <label for="fruit">Select fruit:</label>
+    <select id="fruit" name="fruit">
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="orange">Orange</option>
+      <option value="mango">Mango</option>
+    </select><br />
+    <br /><br />
+    <label for="resume">Select Resume:</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" />
+    <br /><br />
+    <div class="button-container">
+      <button type="submit">REGISTER</button>
+      <button type="reset">Reset</button>
+      <button type="button">OK</button>
+    </div>
+  </form>
+</body>
+
+</html>
